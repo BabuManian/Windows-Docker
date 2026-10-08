@@ -1,6 +1,6 @@
 {
   "name": "Windows in Codespaces",
-  "dockerComposeFile": "../docker-compose.yml",
+  "dockerComposeFile": "docker-compose.yml",
   "service": "windows",
   "workspaceFolder": "/workspace",
   "forwardPorts": [8006, 3389],
