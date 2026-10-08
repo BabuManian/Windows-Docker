@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  windows:
+    image: dockur/windows
+    container_name: windows
+    environment:
+      VERSION: "win11"
+    devices:
+      - /dev/kvm
+    cap_add:
+      - KVM
+    ports:
+      - 8006:8006
+      - 3389:3389
+    stop_grace_period: 2m
